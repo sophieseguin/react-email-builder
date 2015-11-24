@@ -1,0 +1,18 @@
+// --------------------------------------------------------------------------
+// Border-box Grid
+// --------------------------------------------------------------------------
+// Author:      Zone
+// Email:       frontend@thisiszone.com
+// URL:         http://thisiszone.com
+// Copyright:   Copyright (c) 2015, thisiszone.com. All rights reserved.
+// Version:     1.5
+// --------------------------------------------------------------------------
+
+
+@mixin col($i) {
+    @include box-sizing-fallback(border-box);
+
+    float: left;
+    width: percentage(($column-width * $i) / $container-width);
+    padding: 0 $gutter / 2;
+}

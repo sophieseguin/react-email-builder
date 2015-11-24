@@ -1,0 +1,70 @@
+// Box Sizing Grid
+// --------------------------------------------------------------------------
+
+$container-width:                       1500px;
+$column-width:                          125px;
+$gutter:                                30px;
+
+// Utilities
+// --------------------------------------------------------------------------
+
+@import 'utilities/reset';
+@import 'utilities/border-box-grid';
+@import 'utilities/mixins';
+
+
+// Styling
+// --------------------------------------------------------------------------
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #383a3f;
+    line-height: 1.333;
+}
+
+.items-container {
+    @include col(2);
+    padding: 40px 10px;
+    background: #f8f8f8;
+
+    .heading {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #E9F0F1;
+    }
+
+    .list-item {
+        padding: 30px 0;
+        text-align: center;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .item-container {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.email-container {
+    @include col(10);
+    
+    .heading {
+        padding: 40px;
+        background: #E9F0F1;
+    }
+
+    .layout {
+        padding: 40px;
+    }
+}
+
+.button-container {
+    @include col(12);
+    padding: 40px;
+    text-align: center;
+    background: #E9F0F1;
+}
