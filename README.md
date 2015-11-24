@@ -13,7 +13,7 @@ To begin working on the project, run:
 A new tab will open on your browser. Styles and scripts will be processed and watched for changes.
 
 ## Usage
-Drag modules from the list on the left to the email template on the right.
+Click modules from the list on the left to the email template on the right.
 
 ## List of improvements to be done
 * Data for the modules coming from a JSON file
